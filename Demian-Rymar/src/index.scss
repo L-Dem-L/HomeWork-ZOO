@@ -1,0 +1,566 @@
+// Import libraries css
+@import url(./style/libs/bootstrap.min.css);
+// Global styles for the app
+@import 'style/global/fonts';
+@import 'style/global/variables';
+@import 'style/global/mixins';
+
+// Local styles for pages and components
+
+// @import url('./style/pages/_about.scss');
+
+
+body {
+    background: #0A8215;
+    position: relative;
+
+    .header {
+        z-index: 100;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+
+        .phone_number {
+            white-space: nowrap;
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 36px;
+            color: #ffffff;
+        }
+
+        .phone_icon {
+            object-fit: contain;
+        }
+
+        .change-lang {
+            font-family: 'Comfortaa';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 18px;
+            color: #ffffff;
+        }
+
+        .burger-menu {
+            margin-left: 40px;
+            position: relative;
+            min-height: 30px;
+            width: 30px;
+
+            span {
+                border-bottom: 2px solid rgb(255, 255, 255);
+                width: 32px;
+                transition: transform 0.4s ease;
+            }
+
+            :first-child {
+                position: absolute;
+                top: 0px;
+                left: -20px;
+                height: 10px;
+            }
+
+            :nth-child(2) {
+                position: absolute;
+                top: 10px;
+                left: -20px;
+                height: 10px;
+            }
+
+            :nth-child(3) {
+                position: absolute;
+                top: 20px;
+                left: -20px;
+                height: 10px;
+            }
+        }
+    }
+
+    .hero {
+        overflow: hidden;
+        position: relative;
+        min-height: 100vh;
+        width: 100%;
+        padding: 200px 0;
+
+        &__about {
+            margin-top: 30px;
+            gap: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+
+            &_title {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 64px;
+                color: #FFFFFF;
+
+                span {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 18px;
+                    align-self: flex-end;
+                    text-transform: uppercase;
+                    color: #F8D548;
+                }
+            }
+
+            &_geo {
+                display: flex;
+                flex-direction: column;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 900;
+                font-size: 24px;
+                line-height: 36px;
+                color: #FFFFFF;
+
+                span {
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+
+            &_btn {
+                margin-top: 20px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                text-align: center;
+                color: #FFFFFF;
+
+                #adress {
+                    color: #FFFFFF;
+                    background: #0000;
+                    width: 222px;
+                    height: 56px;
+                    border: 1px solid #FFFFFF;
+                    border-radius: 42px;
+                }
+
+                #ticket {
+                    color: #FFFFFF;
+                    width: 180px;
+                    height: 56px;
+                    background: linear-gradient(90deg, #F46141 2.43%, #F29E2B 100%);
+                    border-radius: 42px;
+                    border: none;
+                }
+            }
+
+            &_animals {
+                margin-top: 20px;
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 64px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+
+                #all-animals {
+                    width: 136px;
+                    height: 136px;
+                    background: rgba(18, 131, 28, 0.89);
+                    border: 1px dashed rgba(255, 255, 255, 0.4);
+                    border-radius: 32px 56px 32px 64px;
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 14px;
+                    line-height: 64px;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    text-decoration-line: underline;
+                }
+
+                :nth-child(2) {
+                    opacity: 0.6;
+                }
+
+                :nth-child(3) {
+                    opacity: 0.4;
+                }
+            }
+        }
+
+        &__bg1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 1;
+            z-index: 1;
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(./assets/background/bg-hero-1.png);
+            background-position: center;
+        }
+
+        &__bg2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0px;
+            background: linear-gradient(180deg, #00a510 0, rgba(0, 165, 16, .85) 18.09%, rgba(0, 165, 15, .7) 51.18%, #13801d 85.09%, #098214 100%);
+            z-index: 1;
+        }
+
+        &__bg-text-up {
+            color: #0000;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            left: 30%;
+            top: 50px;
+            z-index: 1;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 200px;
+            text-transform: uppercase;
+            opacity: 0.3;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+        }
+
+        &__bg-text-down {
+            color: #0000;
+            white-space: nowrap;
+            overflow: hidden;
+            position: absolute;
+            left: 2%;
+            bottom: -40px;
+            z-index: 1;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 200px;
+            text-transform: uppercase;
+            opacity: 0.3;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #fff;
+        }
+
+        &__bg-animals {
+            position: absolute;
+            right: -250px;
+            top: 20px;
+            z-index: 1;
+            width: 999px;
+            height: 892px;
+            background-image: url(./assets/background/hero_elipse.png);
+            background-repeat: no-repeat;
+        }
+    }
+
+    .patrones {
+        margin: 80px 0;
+
+        &__title {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 64px;
+            color: #FFFFFF;
+        }
+
+        .swiper-slide {
+            opacity: 0.5;
+        }
+
+        .swiper-slide-active {
+            opacity: 1;
+        }
+
+        .patron {
+            &__about {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                gap: 15px;
+
+                &_name {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 36px;
+                    line-height: 64px;
+                    color: #FFFFFF;
+                }
+
+                &_text {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+
+                &_animal {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+
+                    span {
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+
+        .patrones-slider-btn {
+            margin-right: 100px;
+
+            .prev-slide {
+                img {
+                    transform: rotate(180deg);
+                }
+            }
+
+            button {
+                background-color: #0000;
+                border: none;
+            }
+
+        }
+    }
+
+    .tutorship {
+        #tutorship {
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 28px;
+            text-align: center;
+            color: #FFFFFF;
+            margin-top: 40px;
+            background: linear-gradient(90deg, #F46141 2.43%, #F29E2B 100%);
+            border-radius: 32px;
+            border: none;
+            height: 68px;
+            
+        }
+
+        &__post {
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 50px;
+            position: relative;
+            min-height: 597px;
+            width: 100%;
+            background: #FFDB00;
+            border-radius: 64px;
+            background-image: url(./assets/background/post-bg.png);
+            background-repeat: no-repeat;
+            background-position: right -2px top 30px;
+
+            &_img {
+                z-index: 1;
+                position: absolute;
+                right: -20px;
+                bottom: 40px;
+
+                img {
+                    object-fit: cover;
+                }
+            }
+
+            &_content {
+                font-family: 'Raleway';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 120%;
+                color: #000000;
+
+                span {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+
+            .post_content_title {
+                h1 {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 120%;
+                    color: #000000;
+                }
+            }
+        }
+    }
+
+    .visitors {
+        height: 100vh;
+
+        &__title {
+            margin-top: 100px;
+            margin-bottom: 30px;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 64px;
+            color: #FFFFFF;
+        }
+
+        &__liana {
+            background-image: url(./assets/background/liana.png);
+            background-position: center;
+            background-size: cover;
+            width: 100%;
+            height: 32%;
+            margin-top: 55px;
+            min-height: 16vh;
+        }
+
+        &__items {
+            width: fit-content;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            gap: 70px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &_item {
+                padding: 40px 20px;
+            }
+
+            &_item:hover {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.12) 100%);
+                box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.05);
+                border-radius: 18px;
+            }
+
+            .item-content {
+                h3 {
+                    font-family: 'Comfortaa';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 36px;
+                    color: #FFFFFF;
+                }
+
+                p {
+                    font-family: 'Raleway';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:389px) {}
+
+
+@media only screen and (max-width:992px) {
+    .header {
+        .phone_number {
+            display: none;
+        }
+        .change-lang {
+            display: none;
+        }
+    }
+
+    .hero {
+        &__bg-animals {
+            display: none;
+        }
+
+        &__about {
+            align-items: center;
+
+            &_btn {
+                justify-content: center;
+            }
+
+            &_animals {
+                justify-content: center;
+            }
+        }
+    }
+
+    .patrones {
+
+        &__title {
+            text-align: center;
+        }
+        .patron {
+            flex-wrap: wrap;
+        }
+
+        .patrones-slider-btn {
+            margin-top: 30px;
+        }
+    }
+
+    #tutorship {
+        width: 270px;
+    }
+
+    .tutorship__post_img {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:992px) {
+    .header {
+        .col-6 {
+            gap: 15px;
+        }
+
+        .change-lang {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    .hero {
+        &__about {
+            align-items: flex-start;
+        }
+    }
+
+    #tutorship {
+        width: 425px;
+    }
+}

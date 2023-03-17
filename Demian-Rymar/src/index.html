@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <title>Лімпопо</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-6">
+                    <img class="header__logo" src="./assets/icons/logo_all.png" alt="">
+                </div>
+                <div class="col-6 d-flex justify-content-end">
+                    <div class="header__phone d-flex gap-2">
+                        <img class="phone_icon" src="./assets/img/header_phone.png" alt="">
+                        <div class="phone_number">
+                            +38 067 009 92 32
+                        </div>
+                    </div>
+
+                    <div class="change-lang">
+                        <div class="eng">
+                            Eng
+                        </div>
+
+                        <div class="ukr">
+                            Ukr
+                        </div>
+                    </div>
+
+                    <div class="burger-menu">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero d-flex align-items-center">
+        <div class="hero__bg1"></div>
+        <div class="hero__bg2"></div>
+        <div class="hero__bg-text-up">
+            Зоопарк Зоопарк Зоопарк
+        </div>
+
+        <div class="hero__bg-text-down">
+            Лімпопо Лімпопо Лімпопо
+        </div>
+
+        <div class="hero__bg-animals"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="hero__about">
+                        <div class="hero__about_title">
+                            <span>
+                                Меденичі
+                            </span>
+                            Зоопарк Лімпопо
+                        </div>
+
+                        <div class="hero__about_geo">
+                            Відчинено 10:00 - 17:00
+                            <span>
+                                Львівська обл., Дрогобицький р-н, <br>
+                                с. Меденичі, вул. Львівська 21, 
+                            </span>
+                        </div>
+
+                        <div class="hero__about_btn d-flex gap-5 flex-wrap">
+                            <button id="adress">
+                                Як доїхати
+                            </button>
+                            <button id="ticket">
+                                Квитки
+                            </button>
+                        </div>
+
+                        <div class="hero__about_animals d-flex gap-5 flex-wrap">
+                            <div class="about-animal">
+                                <img src="./assets/img/animal.png" alt="">
+                                <p class="name-animal text-center">
+                                    Єнот полоскун
+                                </p>
+                            </div>
+
+                            <div class="about-animal">
+                                <img src="./assets/img/animal2.png" alt="">
+                                <p class="name-animal text-center">
+                                    Білий лев
+                                </p>
+                            </div>
+
+                            <div class="about-animal">
+                                <img src="./assets/img/animal3.png" alt="">
+                                <p class="name-animal text-center">
+                                    Бінтуронг
+                                </p>
+                            </div>
+
+                            <div class="about-animal">
+                                <button id="all-animals">
+                                    Всі тварини
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="patrones">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="patrones__title">
+                        Наші патрони
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="patrones-slider">
+            <div class="swiper mt-5">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="patron d-flex justify-content-center gap-4 align-items-start">
+                            <img class="patron__img" src="./assets/img/patron.png" alt="">
+                            <div class="patron__about">
+                                <div class="patron__about_name">
+                                    Анна Мельник
+                                </div>
+                                <div class="patron__about_text">
+                                    Подяка за допомогу та опіку над ідеї, як <br>
+                                    можна урізноманітнити свої враження <br>
+                                    під час відвідування зоопарку <br> урізноманітнити свої враження
+                                    підчас...
+                                </div>
+                                <div
+                                    class="patron__about_animal d-flex justify-content-center align-items-center gap-2">
+                                    <img class="animal-photo" src="./assets/img/photo.png" alt="">
+                                    <div class="animal-about">
+                                        <div class="animal-type">
+                                            Котячий лемур
+                                        </div>
+
+                                        <div class="animal-name">
+                                            Ім'я: <span>
+                                                Ларрі
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="patron d-flex justify-content-center gap-4 align-items-start">
+                            <img class="patron__img" src="./assets/img/patron2.png" alt="">
+                            <div class="patron__about">
+                                <div class="patron__about_name">
+                                    Анна Мельник
+                                </div>
+
+                                <div class="patron__about_text">
+                                    Подяка за допомогу та опіку над ідеї, як <br>
+                                    можна урізноманітнити свої враження <br>
+                                    під час відвідування зоопарку <br> урізноманітнити свої враження
+                                    підчас...
+                                </div>
+
+                                <div
+                                    class="patron__about_animal d-flex justify-content-center align-items-center gap-2">
+                                    <img class="animal-photo" src="./assets/img/photo.png" alt="">
+                                    <div class="animal-about">
+                                        <div class="animal-type">
+                                            Котячий лемур
+                                        </div>
+                                        <div class="animal-name">
+                                            Ім'я: <span>
+                                                Ларрі
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="patron d-flex justify-content-center gap-4 align-items-start">
+                            <img class="patron__img" src="./assets/img/patron2.png" alt="">
+                            <div class="patron__about">
+                                <div class="patron__about_name">
+                                    Анна Мельник
+                                </div>
+
+                                <div class="patron__about_text">
+                                    Подяка за допомогу та опіку над ідеї, як <br>
+                                    можна урізноманітнити свої враження <br>
+                                    під час відвідування зоопарку <br> урізноманітнити свої враження
+                                    підчас...
+                                </div>
+
+                                <div
+                                    class="patron__about_animal d-flex justify-content-center align-items-center gap-2">
+                                    <img class="animal-photo" src="./assets/img/photo.png" alt="">
+                                    <div class="animal-about">
+                                        <div class="animal-type">
+                                            Котячий лемур
+                                        </div>
+                                        <div class="animal-name">
+                                            Ім'я: <span>
+                                                Ларрі
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="patron d-flex justify-content-center gap-4 align-items-start">
+                            <img class="patron__img" src="./assets/img/patron.png" alt="">
+                            <div class="patron__about">
+                                <div class="patron__about_name">
+                                    Анна Мельник
+                                </div>
+
+                                <div class="patron__about_text">
+                                    Подяка за допомогу та опіку над ідеї, як <br>
+                                    можна урізноманітнити свої враження <br>
+                                    під час відвідування зоопарку <br> урізноманітнити свої враження
+                                    підчас...
+                                </div>
+                                <div
+                                    class="patron__about_animal d-flex justify-content-center align-items-center gap-2">
+                                    <img class="animal-photo" src="./assets/img/photo.png" alt="">
+                                    <div class="animal-about">
+                                        <div class="animal-type">
+                                            Котячий лемур
+                                        </div>
+                                        <div class="animal-name">
+                                            Ім'я: <span>
+                                                Ларрі
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need navigation buttons -->
+
+            </div>
+            <div class="patrones-slider-btn d-flex gap-5 justify-content-end">
+                <button class="prev-slide"><img src="./assets/img/next.png" alt=""></button>
+                <button class="next-slide"><img src="./assets/img/next.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+    <section class="tutorship">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tutorship__post d-flex">
+                        <div class="tutorship__post_img"><img src="./assets/img/post-img.png" alt=""></div>
+                        <div class="tutorship__post_content">
+                            <div class="post_content_title">
+                                <h1>
+                                    Ми запускаємо проєкт <br>
+                                    «Стань опікуном лемура»!
+                                </h1>
+                            </div>
+                            <div class="post_content_text">
+                                <p>
+                                    <span>
+                                        15 лемурів чекають на вас!
+                                    </span>
+                                </p>
+
+                                <p>
+                                    • 11 кільцехвостих або котячих лемурів <br>
+                                    • 4 лемури Варі
+                                </p>
+
+                                <p>
+                                    Час немов зупинився, але дивлячись на наших дітей 🐾 ми помічаємо, що він біжить
+                                    невпинно!
+                                </p>
+
+                                <p>
+                                    Малюки підростають, навчаються та граються. Тож ми вирішили познайомити <br> вас
+                                    ближче з
+                                    ними та дати можливість стати справжніми «батьками» для них!
+                                </p>
+                            </div>
+                        </div>
+
+                        <button id="tutorship">
+                            Стати опікуном лемура
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visitors">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="visitors__title">
+                        Відвідувачам
+                    </div>
+
+                    <div class="visitors__items">
+                        <div class="visitors__items_item d-flex align-items-center justify-content-center gap-4">
+                            <img src="./assets/img/visitoritem.png" alt="">
+                            <div class="item-content">
+                                <h3>
+                                    Поради
+                                    відвідувачам
+                                </h3>
+
+                                <p>
+                                    ідеї, як можна урізноманітнити свої <br>
+                                    враження підчас відвідування зоопарку
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="visitors__items_item d-flex align-items-center justify-content-center gap-4">
+                            <img src="./assets/img/visitoritem.png" alt="">
+                            <div class="item-content">
+                                <h3>
+                                    Поради
+                                    відвідувачам
+                                </h3>
+
+                                <p>
+                                    ідеї, як можна урізноманітнити свої <br>
+                                    враження підчас відвідування зоопарку
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="visitors__items_item d-flex align-items-center justify-content-center gap-4">
+                            <img src="./assets/img/visitoritem.png" alt="">
+                            <div class="item-content">
+                                <h3>
+                                    Поради
+                                    відвідувачам
+                                </h3>
+
+                                <p>
+                                    ідеї, як можна урізноманітнити свої <br>
+                                    враження підчас відвідування зоопарку
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="visitors__items_item d-flex align-items-center justify-content-center gap-4">
+                            <img src="./assets/img/visitoritem.png" alt="">
+                            <div class="item-content">
+                                <h3>
+                                    Поради
+                                    відвідувачам
+                                </h3>
+
+                                <p>
+                                    ідеї, як можна урізноманітнити свої <br>
+                                    враження підчас відвідування зоопарку
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="visitors__liana"></div>
+    </section>
+
+    <section class="animal__slider">
+        
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+</body>
+
+</html>
